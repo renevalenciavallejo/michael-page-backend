@@ -68,6 +68,7 @@ public static class ServicesConfigurationExtension
     {
         var sqlServerSettings = new SqlServerSettings();
         configuration.Bind(nameof(sqlServerSettings), sqlServerSettings);
+        //sqlServerSettings.ConnectionString = "\"Data Source=database.windows.net;Initial Catalog=database-name;persist security info=True;user id=michael_page_app;password=Tr0n@Secure#2026!;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;\""
         services.AddSingleton(sqlServerSettings);
     }
     

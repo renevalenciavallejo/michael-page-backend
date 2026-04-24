@@ -5,6 +5,7 @@
         <Nullable>disable</Nullable>
         <ImplicitUsings>enable</ImplicitUsings>
         <UserSecretsId>b8a2faff-8bf5-45b1-b44b-d48e6094f49b</UserSecretsId>
+        <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
     </PropertyGroup>
 
     <ItemGroup>
@@ -20,6 +21,12 @@
     <ItemGroup>
       <ProjectReference Include="..\MichaelPage.Application\MichaelPage.Application.csproj" />
       <ProjectReference Include="..\MichaelPage.Infrastructure\MichaelPage.Infrastructure.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Content Include="..\.dockerignore">
+        <Link>.dockerignore</Link>
+      </Content>
     </ItemGroup>
 
 </Project>

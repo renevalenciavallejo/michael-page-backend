@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MichaelPage.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ce9b261a5aa75b5dbf0fc7b71a0557d3f271aaff")]
 [assembly: System.Reflection.AssemblyProductAttribute("MichaelPage.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MichaelPage.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
