@@ -1,0 +1,11 @@
+/Users/renevalencia/Swetro/github/michael-page/MichaelPage.Common/bin/Debug/net8.0/MichaelPage.Common.deps.json
+/Users/renevalencia/Swetro/github/michael-page/MichaelPage.Common/bin/Debug/net8.0/MichaelPage.Common.dll
+/Users/renevalencia/Swetro/github/michael-page/MichaelPage.Common/bin/Debug/net8.0/MichaelPage.Common.pdb
+/Users/renevalencia/Swetro/github/michael-page/MichaelPage.Common/obj/Debug/net8.0/MichaelPage.Common.GeneratedMSBuildEditorConfig.editorconfig
+/Users/renevalencia/Swetro/github/michael-page/MichaelPage.Common/obj/Debug/net8.0/MichaelPage.Common.AssemblyInfoInputs.cache
+/Users/renevalencia/Swetro/github/michael-page/MichaelPage.Common/obj/Debug/net8.0/MichaelPage.Common.AssemblyInfo.cs
+/Users/renevalencia/Swetro/github/michael-page/MichaelPage.Common/obj/Debug/net8.0/MichaelPage.Common.csproj.CoreCompileInputs.cache
+/Users/renevalencia/Swetro/github/michael-page/MichaelPage.Common/obj/Debug/net8.0/MichaelPage.Common.dll
+/Users/renevalencia/Swetro/github/michael-page/MichaelPage.Common/obj/Debug/net8.0/refint/MichaelPage.Common.dll
+/Users/renevalencia/Swetro/github/michael-page/MichaelPage.Common/obj/Debug/net8.0/MichaelPage.Common.pdb
+/Users/renevalencia/Swetro/github/michael-page/MichaelPage.Common/obj/Debug/net8.0/ref/MichaelPage.Common.dll

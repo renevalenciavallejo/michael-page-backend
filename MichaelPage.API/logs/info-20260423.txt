@@ -1,0 +1,308 @@
+2026-04-23 22:28:32.790 -05:00 [FTL] Application startup exception
+System.InvalidOperationException: Unable to resolve service for type 'Microsoft.AspNetCore.OutputCaching.IOutputCacheStore' while attempting to activate 'Microsoft.AspNetCore.OutputCaching.OutputCacheMiddleware'.
+   at Microsoft.Extensions.Internal.ActivatorUtilities.ConstructorMatcher.CreateInstance(IServiceProvider provider)
+   at Microsoft.Extensions.Internal.ActivatorUtilities.CreateInstance(IServiceProvider provider, Type instanceType, Object[] parameters)
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.ReflectionMiddlewareBinder.CreateMiddleware(RequestDelegate next)
+   at Microsoft.AspNetCore.Builder.ApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.ApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+2026-04-23 22:28:32.821 -05:00 [ERR] Hosting failed to start
+System.InvalidOperationException: Unable to resolve service for type 'Microsoft.AspNetCore.OutputCaching.IOutputCacheStore' while attempting to activate 'Microsoft.AspNetCore.OutputCaching.OutputCacheMiddleware'.
+   at Microsoft.Extensions.Internal.ActivatorUtilities.ConstructorMatcher.CreateInstance(IServiceProvider provider)
+   at Microsoft.Extensions.Internal.ActivatorUtilities.CreateInstance(IServiceProvider provider, Type instanceType, Object[] parameters)
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.ReflectionMiddlewareBinder.CreateMiddleware(RequestDelegate next)
+   at Microsoft.AspNetCore.Builder.ApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.ApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__15_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+2026-04-23 22:28:32.879 -05:00 [FTL] Unhandled exception
+System.InvalidOperationException: Unable to resolve service for type 'Microsoft.AspNetCore.OutputCaching.IOutputCacheStore' while attempting to activate 'Microsoft.AspNetCore.OutputCaching.OutputCacheMiddleware'.
+   at Microsoft.Extensions.Internal.ActivatorUtilities.ConstructorMatcher.CreateInstance(IServiceProvider provider)
+   at Microsoft.Extensions.Internal.ActivatorUtilities.CreateInstance(IServiceProvider provider, Type instanceType, Object[] parameters)
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.ReflectionMiddlewareBinder.CreateMiddleware(RequestDelegate next)
+   at Microsoft.AspNetCore.Builder.ApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.ApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__15_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+   at Microsoft.Extensions.Hosting.Internal.Host.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.Run(IHost host)
+   at Program.<Main>$(String[] args) in /Users/renevalencia/Swetro/github/michael-page/MichaelPage.API/Program.cs:line 74
+2026-04-23 22:28:32.886 -05:00 [INF] Shut down complete
+2026-04-23 22:29:58.590 -05:00 [INF] Now listening on: http://localhost:5161
+2026-04-23 22:29:58.604 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-04-23 22:29:58.604 -05:00 [INF] Hosting environment: Development
+2026-04-23 22:29:58.604 -05:00 [INF] Content root path: /Users/renevalencia/Swetro/github/michael-page/MichaelPage.API
+2026-04-23 22:32:00.463 -05:00 [WRN] Failed to determine the https port for redirect.
+2026-04-23 22:32:00.581 -05:00 [FTL] Error validating the Lucky Penny software license key
+System.ArgumentNullException: IDX10000: The parameter 'token' cannot be a 'null' or an empty object.  (Parameter 'token')
+2026-04-23 22:32:00.583 -05:00 [WRN] You do not have a valid license key for the Lucky Penny software AutoMapper. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2026-04-23 22:32:00.657 -05:00 [WRN] Bad request - Validation error: {"Name":["'Name' must not be empty."],"Email":["'Email' is not a valid email address."]}
+2026-04-23 22:32:00.671 -05:00 [INF] HTTP POST /api/v1/users responded 400 in 215.8642 ms
+2026-04-23 22:32:41.400 -05:00 [INF] UserService - CreateUser. Attempting to create user. Name: René Valencia - Email: rene@mail.com
+2026-04-23 22:32:55.696 -05:00 [INF] UserRepository - GetByEmail. Email: rene@mail.com
+2026-04-23 22:33:17.366 -05:00 [INF] UserRepository - Create. Input: MichaelPage.Core.Entities.User
+2026-04-23 22:33:21.694 -05:00 [INF] UserService - CreateUser. User created successfully. UserId: 1
+2026-04-23 22:33:31.550 -05:00 [INF] UserService - GetUserById. Fetching user. UserId: 1
+2026-04-23 22:33:33.239 -05:00 [INF] UserRepository - GetById. Id: 1
+2026-04-23 22:33:46.818 -05:00 [ERR] Error mapping types.
+
+Mapping types:
+User -> UserDto
+MichaelPage.Core.Entities.User -> MichaelPage.Application.Users.Dto.UserDto
+
+Type Map configuration:
+User -> UserDto
+MichaelPage.Core.Entities.User -> MichaelPage.Application.Users.Dto.UserDto
+
+Destination Member:
+CreatedAt
+
+AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+User -> UserDto
+MichaelPage.Core.Entities.User -> MichaelPage.Application.Users.Dto.UserDto
+
+Type Map configuration:
+User -> UserDto
+MichaelPage.Core.Entities.User -> MichaelPage.Application.Users.Dto.UserDto
+
+Destination Member:
+CreatedAt
+
+ ---> AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+DateTimeOffset -> DateTime
+System.DateTimeOffset -> System.DateTime
+
+Destination Member:
+CreatedAt
+
+   at lambda_method16(Closure, DateTimeOffset, DateTime, ResolutionContext)
+   at lambda_method15(Closure, Object, UserDto, ResolutionContext)
+   --- End of inner exception stack trace ---
+   at lambda_method15(Closure, Object, UserDto, ResolutionContext)
+   at MichaelPage.Application.Users.UserService.GetUserById(Int32 userId) in /Users/renevalencia/Swetro/github/michael-page/MichaelPage.Application/Users/UserService.cs:line 69
+   at MichaelPage.Application.Users.UserService.CreateUser(CreateUserDto input) in /Users/renevalencia/Swetro/github/michael-page/MichaelPage.Application/Users/UserService.cs:line 43
+   at MichaelPage.API.Controllers.UsersController.Create(CreateUserDto input) in /Users/renevalencia/Swetro/github/michael-page/MichaelPage.API/Controllers/UsersController.cs:line 36
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|26_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+2026-04-23 22:33:46.826 -05:00 [ERR] HTTP POST /api/v1/users responded 500 in 84929.8516 ms
+2026-04-23 22:34:31.822 -05:00 [INF] Now listening on: http://localhost:5161
+2026-04-23 22:34:31.846 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-04-23 22:34:31.847 -05:00 [INF] Hosting environment: Development
+2026-04-23 22:34:31.847 -05:00 [INF] Content root path: /Users/renevalencia/Swetro/github/michael-page/MichaelPage.API
+2026-04-23 22:34:42.293 -05:00 [WRN] Failed to determine the https port for redirect.
+2026-04-23 22:34:42.400 -05:00 [FTL] Error validating the Lucky Penny software license key
+System.ArgumentNullException: IDX10000: The parameter 'token' cannot be a 'null' or an empty object.  (Parameter 'token')
+2026-04-23 22:34:42.402 -05:00 [WRN] You do not have a valid license key for the Lucky Penny software AutoMapper. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2026-04-23 22:34:46.362 -05:00 [INF] UserService - CreateUser. Attempting to create user. Name: René Valencia - Email: rene@mail.com
+2026-04-23 22:34:47.193 -05:00 [INF] UserRepository - GetByEmail. Email: rene@mail.com
+2026-04-23 22:34:50.377 -05:00 [WRN] UserService - CreateUser. Email already in use. Name: René Valencia - Email: rene@mail.com
+2026-04-23 22:34:50.378 -05:00 [ERR] UsersController - Create: Email already in use.
+2026-04-23 22:34:50.398 -05:00 [INF] HTTP POST /api/v1/users responded 400 in 8109.2782 ms
+2026-04-23 22:35:17.035 -05:00 [INF] UserService - CreateUser. Attempting to create user. Name: Andrea López - Email: andrea@mail.com
+2026-04-23 22:35:17.679 -05:00 [INF] UserRepository - GetByEmail. Email: andrea@mail.com
+2026-04-23 22:35:19.293 -05:00 [INF] UserRepository - Create. Input: MichaelPage.Core.Entities.User
+2026-04-23 22:35:19.961 -05:00 [INF] UserService - CreateUser. User created successfully. UserId: 2
+2026-04-23 22:35:21.167 -05:00 [INF] UserService - GetUserById. Fetching user. UserId: 2
+2026-04-23 22:35:22.509 -05:00 [INF] UserRepository - GetById. Id: 2
+2026-04-23 22:35:26.764 -05:00 [INF] HTTP POST /api/v1/users responded 201 in 13286.4383 ms
+2026-04-23 22:36:34.455 -05:00 [INF] UserService - GetAllUsers. Fetching users.
+2026-04-23 22:36:34.944 -05:00 [INF] UserRepository - GetAll
+2026-04-23 22:36:37.206 -05:00 [INF] UserService - GetAllUsers. Returned 2 users.
+2026-04-23 22:36:38.904 -05:00 [INF] HTTP GET /api/v1/users responded 200 in 14096.0456 ms
+2026-04-23 22:38:33.425 -05:00 [INF] Now listening on: http://localhost:5161
+2026-04-23 22:38:33.438 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-04-23 22:38:33.439 -05:00 [INF] Hosting environment: Development
+2026-04-23 22:38:33.439 -05:00 [INF] Content root path: /Users/renevalencia/Swetro/github/michael-page/MichaelPage.API
+2026-04-23 22:39:11.358 -05:00 [WRN] Failed to determine the https port for redirect.
+2026-04-23 22:39:11.491 -05:00 [FTL] Error validating the Lucky Penny software license key
+System.ArgumentNullException: IDX10000: The parameter 'token' cannot be a 'null' or an empty object.  (Parameter 'token')
+2026-04-23 22:39:11.493 -05:00 [WRN] You do not have a valid license key for the Lucky Penny software AutoMapper. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2026-04-23 22:39:14.308 -05:00 [INF] UserService - CreateUser. Attempting to create user. Name: Carolina Martínez - Email: carolina@mail.com
+2026-04-23 22:39:14.348 -05:00 [INF] UserRepository - GetByEmail. Email: carolina@mail.com
+2026-04-23 22:39:15.639 -05:00 [INF] UserRepository - Create. Input: MichaelPage.Core.Entities.User
+2026-04-23 22:39:15.776 -05:00 [INF] UserService - CreateUser. User created successfully. UserId: 3
+2026-04-23 22:39:21.081 -05:00 [INF] UserService - GetUserById. Fetching user. UserId: 3
+2026-04-23 22:39:21.084 -05:00 [INF] UserRepository - GetById. Id: 3
+2026-04-23 22:39:21.222 -05:00 [INF] HTTP POST /api/v1/users responded 201 in 9866.6525 ms
+2026-04-23 22:39:33.318 -05:00 [INF] UserService - GetAllUsers. Fetching users.
+2026-04-23 22:39:33.320 -05:00 [INF] UserRepository - GetAll
+2026-04-23 22:39:33.417 -05:00 [INF] UserService - GetAllUsers. Returned 3 users.
+2026-04-23 22:39:33.421 -05:00 [INF] HTTP GET /api/v1/users responded 200 in 2302.4283 ms
+2026-04-23 22:39:47.747 -05:00 [INF] UserService - GetUserById. Fetching user. UserId: 1
+2026-04-23 22:39:47.749 -05:00 [INF] UserRepository - GetById. Id: 1
+2026-04-23 22:39:47.839 -05:00 [INF] HTTP GET /api/v1/users/1 responded 200 in 2701.6983 ms
+2026-04-23 22:39:56.661 -05:00 [INF] UserService - GetUserById. Fetching user. UserId: 12
+2026-04-23 22:39:56.662 -05:00 [INF] UserRepository - GetById. Id: 12
+2026-04-23 22:39:56.750 -05:00 [WRN] UserService - GetUserById. User not found. UserId: 12
+2026-04-23 22:39:56.752 -05:00 [WRN] UsersController - GetById: User not found.
+2026-04-23 22:39:56.753 -05:00 [INF] HTTP GET /api/v1/users/12 responded 404 in 3747.0553 ms
+2026-04-23 22:40:08.235 -05:00 [INF] UserService - GetUserById. Fetching user. UserId: 3
+2026-04-23 22:40:08.236 -05:00 [INF] UserRepository - GetById. Id: 3
+2026-04-23 22:40:08.322 -05:00 [INF] HTTP GET /api/v1/users/3 responded 200 in 88.0744 ms
+2026-04-23 22:40:18.372 -05:00 [INF] UserService - GetUserById. Fetching user. UserId: 31
+2026-04-23 22:40:18.373 -05:00 [INF] UserRepository - GetById. Id: 31
+2026-04-23 22:40:18.455 -05:00 [WRN] UserService - GetUserById. User not found. UserId: 31
+2026-04-23 22:40:18.464 -05:00 [WRN] UsersController - GetById: User not found.
+2026-04-23 22:40:18.464 -05:00 [INF] HTTP GET /api/v1/users/31 responded 404 in 92.3188 ms
+2026-04-23 22:41:21.870 -05:00 [WRN] Bad request - Validation error: {"UserId":["'UserId' must be greater than '0'."]}
+2026-04-23 22:41:21.877 -05:00 [INF] HTTP POST /api/v1/tasks responded 400 in 40.3951 ms
+2026-04-23 22:41:31.446 -05:00 [INF] TaskService - CreateTask. Attempting to create task. Title: Tarea 1 - UserId: 10 - AdditionalInfo: 
+2026-04-23 22:41:32.457 -05:00 [INF] UserRepository - GetById. Id: 10
+2026-04-23 22:41:34.811 -05:00 [WRN] TaskService - CreateTask. Assigned user not found. Title: Tarea 1 - UserId: 10 - AdditionalInfo: 
+2026-04-23 22:41:34.812 -05:00 [ERR] TasksController - Create: Assigned user not found.
+2026-04-23 22:41:34.816 -05:00 [INF] HTTP POST /api/v1/tasks responded 400 in 6480.7951 ms
+2026-04-23 22:41:48.222 -05:00 [INF] TaskService - CreateTask. Attempting to create task. Title: Tarea 1 - UserId: 1 - AdditionalInfo: 
+2026-04-23 22:41:48.674 -05:00 [INF] UserRepository - GetById. Id: 1
+2026-04-23 22:41:58.788 -05:00 [INF] TaskRepository - Create. Input: Id: 0 - Title: Tarea 1 - Status: Pending
+2026-04-23 22:42:04.893 -05:00 [INF] TaskService - CreateTask. Task created successfully. TaskId: 2
+2026-04-23 22:42:04.895 -05:00 [INF] TaskService - GetTaskById. Fetching task. TaskId: 2
+2026-04-23 22:42:04.896 -05:00 [INF] TaskRepository - GetById. Id: 2
+2026-04-23 22:42:05.047 -05:00 [ERR] Error mapping types.
+
+Mapping types:
+Task -> TaskDto
+MichaelPage.Core.Entities.Task -> MichaelPage.Application.Tasks.Dto.TaskDto
+
+Type Map configuration:
+Task -> TaskDto
+MichaelPage.Core.Entities.Task -> MichaelPage.Application.Tasks.Dto.TaskDto
+
+Destination Member:
+CreatedAt
+
+AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+Task -> TaskDto
+MichaelPage.Core.Entities.Task -> MichaelPage.Application.Tasks.Dto.TaskDto
+
+Type Map configuration:
+Task -> TaskDto
+MichaelPage.Core.Entities.Task -> MichaelPage.Application.Tasks.Dto.TaskDto
+
+Destination Member:
+CreatedAt
+
+ ---> AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+DateTimeOffset -> DateTime
+System.DateTimeOffset -> System.DateTime
+
+Destination Member:
+CreatedAt
+
+   at lambda_method45(Closure, DateTimeOffset, DateTime, ResolutionContext)
+   at lambda_method44(Closure, Object, TaskDto, ResolutionContext)
+   --- End of inner exception stack trace ---
+   at lambda_method44(Closure, Object, TaskDto, ResolutionContext)
+   at MichaelPage.Application.Tasks.TaskService.GetTaskById(Int32 taskId) in /Users/renevalencia/Swetro/github/michael-page/MichaelPage.Application/Tasks/TaskService.cs:line 103
+   at MichaelPage.Application.Tasks.TaskService.CreateTask(CreateTaskDto input) in /Users/renevalencia/Swetro/github/michael-page/MichaelPage.Application/Tasks/TaskService.cs:line 56
+   at MichaelPage.API.Controllers.TasksController.Create(CreateTaskDto input) in /Users/renevalencia/Swetro/github/michael-page/MichaelPage.API/Controllers/TasksController.cs:line 37
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|26_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+2026-04-23 22:42:05.088 -05:00 [ERR] HTTP POST /api/v1/tasks responded 500 in 20004.9749 ms
+2026-04-23 22:42:48.576 -05:00 [INF] Now listening on: http://localhost:5161
+2026-04-23 22:42:48.589 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-04-23 22:42:48.589 -05:00 [INF] Hosting environment: Development
+2026-04-23 22:42:48.589 -05:00 [INF] Content root path: /Users/renevalencia/Swetro/github/michael-page/MichaelPage.API
+2026-04-23 22:42:54.734 -05:00 [WRN] Failed to determine the https port for redirect.
+2026-04-23 22:42:54.870 -05:00 [FTL] Error validating the Lucky Penny software license key
+System.ArgumentNullException: IDX10000: The parameter 'token' cannot be a 'null' or an empty object.  (Parameter 'token')
+2026-04-23 22:42:54.872 -05:00 [WRN] You do not have a valid license key for the Lucky Penny software AutoMapper. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2026-04-23 22:42:57.839 -05:00 [INF] TaskService - CreateTask. Attempting to create task. Title: Tarea 1 - UserId: 1 - AdditionalInfo: 
+2026-04-23 22:42:58.596 -05:00 [INF] UserRepository - GetById. Id: 1
+2026-04-23 22:43:04.199 -05:00 [INF] TaskRepository - Create. Input: Id: 0 - Title: Tarea 1 - Status: Pending
+2026-04-23 22:43:10.891 -05:00 [INF] TaskService - CreateTask. Task created successfully. TaskId: 3
+2026-04-23 22:43:13.527 -05:00 [INF] TaskService - GetTaskById. Fetching task. TaskId: 3
+2026-04-23 22:43:13.529 -05:00 [INF] TaskRepository - GetById. Id: 3
+2026-04-23 22:43:13.634 -05:00 [INF] UserRepository - GetById. Id: 1
+2026-04-23 22:43:13.749 -05:00 [INF] HTTP POST /api/v1/tasks responded 201 in 19027.4170 ms
+2026-04-23 22:44:17.709 -05:00 [INF] TaskService - CreateTask. Attempting to create task. Title: Tarea 2 - UserId: 1 - AdditionalInfo: Priority: High - EstimatedEndDate: 24/04/2026 3:40:33 AM - Tags: Tag 1, Tag 2
+2026-04-23 22:44:18.238 -05:00 [INF] UserRepository - GetById. Id: 1
+2026-04-23 22:44:27.530 -05:00 [INF] TaskRepository - Create. Input: Id: 0 - Title: Tarea 2 - Status: Pending
+2026-04-23 22:44:28.534 -05:00 [INF] TaskService - CreateTask. Task created successfully. TaskId: 4
+2026-04-23 22:44:30.541 -05:00 [INF] TaskService - GetTaskById. Fetching task. TaskId: 4
+2026-04-23 22:44:30.541 -05:00 [INF] TaskRepository - GetById. Id: 4
+2026-04-23 22:44:30.623 -05:00 [INF] UserRepository - GetById. Id: 1
+2026-04-23 22:44:30.705 -05:00 [INF] HTTP POST /api/v1/tasks responded 201 in 16579.2202 ms
+2026-04-23 22:44:55.879 -05:00 [INF] TaskService - GetTaskById. Fetching task. TaskId: 1
+2026-04-23 22:44:55.880 -05:00 [INF] TaskRepository - GetById. Id: 1
+2026-04-23 22:44:55.970 -05:00 [WRN] TaskService - GetTaskById. Task not found. TaskId: 1
+2026-04-23 22:44:55.972 -05:00 [WRN] TasksController - GetById: Task not found.
+2026-04-23 22:44:55.977 -05:00 [INF] HTTP GET /api/v1/tasks/1 responded 404 in 105.1034 ms
+2026-04-23 22:45:20.707 -05:00 [INF] TaskService - GetTaskById. Fetching task. TaskId: 2
+2026-04-23 22:45:20.708 -05:00 [INF] TaskRepository - GetById. Id: 2
+2026-04-23 22:45:20.795 -05:00 [INF] UserRepository - GetById. Id: 1
+2026-04-23 22:45:20.879 -05:00 [INF] HTTP GET /api/v1/tasks/2 responded 200 in 175.8903 ms
+2026-04-23 22:45:31.768 -05:00 [INF] TaskService - GetTaskById. Fetching task. TaskId: 3
+2026-04-23 22:45:31.768 -05:00 [INF] TaskRepository - GetById. Id: 3
+2026-04-23 22:45:31.856 -05:00 [INF] UserRepository - GetById. Id: 1
+2026-04-23 22:45:32.003 -05:00 [INF] HTTP GET /api/v1/tasks/3 responded 200 in 235.8997 ms
+2026-04-23 22:45:38.285 -05:00 [INF] TaskService - GetTaskById. Fetching task. TaskId: 4
+2026-04-23 22:45:38.304 -05:00 [INF] TaskRepository - GetById. Id: 4
+2026-04-23 22:45:38.388 -05:00 [INF] UserRepository - GetById. Id: 1
+2026-04-23 22:45:38.471 -05:00 [INF] HTTP GET /api/v1/tasks/4 responded 200 in 187.5870 ms
+2026-04-23 22:45:42.807 -05:00 [INF] TaskService - GetTaskById. Fetching task. TaskId: 41
+2026-04-23 22:45:42.808 -05:00 [INF] TaskRepository - GetById. Id: 41
+2026-04-23 22:45:42.898 -05:00 [WRN] TaskService - GetTaskById. Task not found. TaskId: 41
+2026-04-23 22:45:42.899 -05:00 [WRN] TasksController - GetById: Task not found.
+2026-04-23 22:45:42.900 -05:00 [INF] HTTP GET /api/v1/tasks/41 responded 404 in 94.4715 ms
+2026-04-23 22:45:58.863 -05:00 [INF] TaskService - GetAllTasks. Fetching tasks. Status: null
+2026-04-23 22:45:58.866 -05:00 [INF] TaskRepository - GetAll. Status: null
+2026-04-23 22:45:59.026 -05:00 [INF] UserRepository - GetAll
+2026-04-23 22:45:59.108 -05:00 [INF] TaskService - GetAllTasks. Returned 3 tasks.
+2026-04-23 22:45:59.109 -05:00 [INF] HTTP GET /api/v1/tasks responded 200 in 284.5294 ms
+2026-04-23 22:46:13.314 -05:00 [INF] TaskService - GetAllTasks. Fetching tasks. Status: "InProgress"
+2026-04-23 22:46:13.317 -05:00 [INF] TaskRepository - GetAll. Status: "InProgress"
+2026-04-23 22:46:13.402 -05:00 [INF] UserRepository - GetAll
+2026-04-23 22:46:13.484 -05:00 [INF] TaskService - GetAllTasks. Returned 0 tasks.
+2026-04-23 22:46:13.488 -05:00 [INF] HTTP GET /api/v1/tasks responded 200 in 190.2921 ms
+2026-04-23 22:46:17.934 -05:00 [INF] TaskService - GetAllTasks. Fetching tasks. Status: "Pending"
+2026-04-23 22:46:17.935 -05:00 [INF] TaskRepository - GetAll. Status: "Pending"
+2026-04-23 22:46:18.038 -05:00 [INF] UserRepository - GetAll
+2026-04-23 22:46:18.120 -05:00 [INF] TaskService - GetAllTasks. Returned 3 tasks.
+2026-04-23 22:46:18.121 -05:00 [INF] HTTP GET /api/v1/tasks responded 200 in 187.6708 ms
+2026-04-23 22:46:42.671 -05:00 [INF] TaskService - UpdateTaskStatus. Attempting status update. TaskId: 2 - NewStatus: "Done"
+2026-04-23 22:46:42.671 -05:00 [INF] TaskRepository - GetById. Id: 2
+2026-04-23 22:46:42.778 -05:00 [WRN] TaskService - UpdateTaskStatus. Invalid transition. TaskId: 2 - CurrentStatus: Pending - NewStatus: "Done"
+2026-04-23 22:46:42.792 -05:00 [WRN] TasksController - UpdateStatus: Cannot transition from 'Pending' to 'Done'
+2026-04-23 22:46:42.794 -05:00 [INF] HTTP PATCH /api/v1/tasks/2/status responded 400 in 135.3042 ms
+2026-04-23 22:46:49.677 -05:00 [INF] TaskService - UpdateTaskStatus. Attempting status update. TaskId: 2 - NewStatus: "InProgress"
+2026-04-23 22:46:49.678 -05:00 [INF] TaskRepository - GetById. Id: 2
+2026-04-23 22:46:49.770 -05:00 [INF] TaskRepository - UpdateStatus. Id: 2 - NewStatus: "InProgress"
+2026-04-23 22:46:49.932 -05:00 [INF] TaskService - UpdateTaskStatus. Status updated successfully. TaskId: 2 - NewStatus: "InProgress"
+2026-04-23 22:46:49.933 -05:00 [INF] HTTP PATCH /api/v1/tasks/2/status responded 200 in 256.4370 ms
+2026-04-23 22:46:58.545 -05:00 [INF] TaskService - GetTaskById. Fetching task. TaskId: 2
+2026-04-23 22:46:58.546 -05:00 [INF] TaskRepository - GetById. Id: 2
+2026-04-23 22:46:58.637 -05:00 [INF] UserRepository - GetById. Id: 1
+2026-04-23 22:46:58.750 -05:00 [INF] HTTP GET /api/v1/tasks/2 responded 200 in 205.4711 ms
+2026-04-23 22:47:04.327 -05:00 [INF] TaskService - UpdateTaskStatus. Attempting status update. TaskId: 2 - NewStatus: "Done"
+2026-04-23 22:47:04.327 -05:00 [INF] TaskRepository - GetById. Id: 2
+2026-04-23 22:47:04.414 -05:00 [INF] TaskRepository - UpdateStatus. Id: 2 - NewStatus: "Done"
+2026-04-23 22:47:04.509 -05:00 [INF] TaskService - UpdateTaskStatus. Status updated successfully. TaskId: 2 - NewStatus: "Done"
+2026-04-23 22:47:04.513 -05:00 [INF] HTTP PATCH /api/v1/tasks/2/status responded 200 in 188.6920 ms
+2026-04-23 22:47:09.195 -05:00 [INF] TaskService - GetTaskById. Fetching task. TaskId: 2
+2026-04-23 22:47:09.195 -05:00 [INF] TaskRepository - GetById. Id: 2
+2026-04-23 22:47:09.282 -05:00 [INF] UserRepository - GetById. Id: 1
+2026-04-23 22:47:09.369 -05:00 [INF] HTTP GET /api/v1/tasks/2 responded 200 in 175.5499 ms
+2026-04-23 22:47:24.819 -05:00 [WRN] Bad request - Validation error: {"Title":["'Title' must not be empty."]}
+2026-04-23 22:47:24.823 -05:00 [INF] HTTP POST /api/v1/tasks responded 400 in 39.1528 ms
