@@ -351,3 +351,5 @@ MigrationBackup/
 
 .idea
 .DS_Store
+# App runtime logs
+MichaelPage.API/logs/
